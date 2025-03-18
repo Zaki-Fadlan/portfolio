@@ -22,9 +22,11 @@ const Home: React.FC<HomeProps> = ({ setActiveContent }) => {
           Welcome to my digital space! I’m a{" "}
           <span className="font-semibold glow text-primary">
             Software Engineer
-          </span>{" "}
-          passionate about creating immersive and interactive experiences.
-          Discover my work, explore my skills, and let’s connect!
+          </span>
+          with a passion for building immersive, interactive, and cutting-edge
+          experiences. Dive into my world of innovation, creativity, and
+          technology—where ideas come to life. Let’s create, collaborate, and
+          innovate together!
         </p>
       </div>
       {/* Container untuk button */}
