@@ -6,10 +6,10 @@ interface ProjectProps {
   setActiveContent: (content: string) => void;
 }
 const images = [
-  "/asset/image/p_backoffice/Screenshot 2025-03-18 123110.png",
-  "/asset/image/p_backoffice/Screenshot 2025-03-18 123122.png",
-  "/asset/image/p_backoffice/Screenshot 2025-03-18 123201.png",
-  "/asset/image/p_backoffice/Screenshot 2025-03-18 123235.png",
+  "/portfolio/asset/image/p_backoffice/Screenshot 2025-03-18 123110.png",
+  "/portfolio/asset/image/p_backoffice/Screenshot 2025-03-18 123122.png",
+  "/portfolio/asset/image/p_backoffice/Screenshot 2025-03-18 123201.png",
+  "/portfolio/asset/image/p_backoffice/Screenshot 2025-03-18 123235.png",
 ];
 const ProjectBackOffice: React.FC<ProjectProps> = ({ setActiveContent }) => {
   return (
@@ -20,7 +20,7 @@ const ProjectBackOffice: React.FC<ProjectProps> = ({ setActiveContent }) => {
       <div className="overflow-auto flex items-center flex-col space-y-4 mt-4 mb-2">
         <Image
           className="rounded"
-          src={"/asset/image/p_backoffice/backoffice.jpeg"}
+          src={"/portfolio/asset/image/p_backoffice/backoffice.jpeg"}
           width={400}
           height={400}
           alt="IOT"

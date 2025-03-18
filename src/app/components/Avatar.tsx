@@ -30,7 +30,7 @@ const Avatar = ({ setVrm }: { setVrm: (vrm: VRM) => void }) => {
       loader.register((parser) => new VRMLoaderPlugin(parser));
 
       loader.load(
-        "/asset/model/Himari_.vrm",
+        "/portfolio/asset/model/Himari_.vrm",
         (gltf) => {
           setGltf(gltf);
           const vrm: VRM = gltf.userData.vrm;
@@ -134,24 +134,24 @@ const Avatars: React.FC<AvatarsProps> = ({ activeContent }) => {
   useEffect(() => {
     if (!vrm) return;
 
-    let animationUrl = "/asset/animation/Catwalk Idle 02.fbx";
+    let animationUrl = "/portfolio/asset/animation/Catwalk Idle 02.fbx";
 
     // Jika halaman baru pertama kali dibuka, mainkan animasi Waving dulu
     if (!isFirstAnimationDone) {
-      animationUrl = "/asset/animation/Waving (2).fbx";
+      animationUrl = "/portfolio/asset/animation/Waving (2).fbx";
       setTimeout(() => {
         setIsFirstAnimationDone(true); // Setelah beberapa detik, set animasi default
       }, 3050);
     } else {
       //  jalankan animasi berdasarkan menu aktif
       if (activeContent === "home")
-        animationUrl = "/asset/animation/Catwalk Idle 02.fbx";
+        animationUrl = "/portfolio/asset/animation/Catwalk Idle 02.fbx";
       else if (activeContent === "about")
-        animationUrl = "/asset/animation/Brooklyn Uprock.fbx";
+        animationUrl = "/portfolio/asset/animation/Brooklyn Uprock.fbx";
       else if (activeContent === "projects")
-        animationUrl = "/asset/animation/Samba Dancing.fbx";
+        animationUrl = "/portfolio/asset/animation/Samba Dancing.fbx";
       else if (activeContent === "contact")
-        animationUrl = "/asset/animation/Texting.fbx";
+        animationUrl = "/portfolio/asset/animation/Texting.fbx";
     }
 
     loadFBX(animationUrl, vrm);

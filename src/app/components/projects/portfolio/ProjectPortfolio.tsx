@@ -15,7 +15,7 @@ const ProjectPortfolio: React.FC<ProjectProps> = ({ setActiveContent }) => {
       <div className="overflow-auto flex items-center flex-col space-y-4 mt-4 mb-2">
         <Image
           className="rounded"
-          src={"/asset/image/porfolio.jpeg"}
+          src={"/portfolio/asset/image/porfolio.jpeg"}
           width={400}
           height={400}
           alt="IOT"

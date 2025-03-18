@@ -6,11 +6,11 @@ interface ProjectProps {
   setActiveContent: (content: string) => void;
 }
 const images = [
-  "/asset/image/p_iot/1000026487.jpg",
-  "/asset/image/p_iot/1000026798.jpg",
-  "/asset/image/p_iot/IMG_20240908_233214_976.jpg",
-  "/asset/image/p_iot/IMG_20240908_233215_108.jpg",
-  "/asset/image/p_iot/IMG_20240908_233252_559.jpg", // Gambar ke-5 (akan tersembunyi)
+  "/portfolio/asset/image/p_iot/1000026487.jpg",
+  "/portfolio/asset/image/p_iot/1000026798.jpg",
+  "/portfolio/asset/image/p_iot/IMG_20240908_233214_976.jpg",
+  "/portfolio/asset/image/p_iot/IMG_20240908_233215_108.jpg",
+  "/portfolio/asset/image/p_iot/IMG_20240908_233252_559.jpg", // Gambar ke-5 (akan tersembunyi)
 ];
 const ProjectATSAMF: React.FC<ProjectProps> = ({ setActiveContent }) => {
   return (
@@ -21,7 +21,7 @@ const ProjectATSAMF: React.FC<ProjectProps> = ({ setActiveContent }) => {
       <div className="overflow-auto flex items-center flex-col space-y-4 mt-4 mb-2">
         <Image
           className="rounded"
-          src={"/asset/image/p_iot/IoT.jpeg"}
+          src={"/portfolio/asset/image/p_iot/IoT.jpeg"}
           width={400}
           height={400}
           alt="IOT"
