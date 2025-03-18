@@ -1,0 +1,22 @@
+Smart Centralized ATS-AMF Power Management System
+Description:
+The Smart Centralized ATS-AMF Power Management System is an automated system designed to manage and monitor power supply transitions between the main grid (PLN) and a generator (genset) across multiple locations. This system utilizes ESP32/ESP8266 as the main microcontroller, ZMPT101B sensors for three-phase voltage monitoring, and relays for automatic power switching.
+
+Key Features:
+✅ Automatic Power Switching (ATS-AMF): Seamless transition between the main grid and the generator during power failures.
+✅ Multi-Location Management: Manage and monitor multiple locations from a centralized platform.
+✅ Three-Phase Voltage Monitoring: Uses ZMPT101B sensors to detect voltage stability.
+✅ Remote Control via Website & Telegram Bot: Manage and monitor the system through a Next.js web app or a Telegram bot.
+✅ Data Logging & Analysis: Stores voltage data in a database for performance analysis.
+✅ Alerts & Notifications: Sends real-time notifications in case of unstable voltage or power disruptions.
+
+Technologies Used:
+
+Hardware: ESP32/ESP8266, ZMPT101B, Relays
+Software: Next.js (Frontend), Firebase/MySQL (Database), Arduino IDE
+Communication Protocols: WiFi, MQTT/HTTP for data exchange
+Benefits:
+🔹 Monitor & control the system from anywhere via web or Telegram bot
+🔹 Manage power supply across multiple locations in a single centralized system
+🔹 Prevent equipment damage due to unstable voltage fluctuations
+🔹 Improve efficiency & safety of power management systems

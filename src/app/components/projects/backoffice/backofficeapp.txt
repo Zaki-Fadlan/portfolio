@@ -1,0 +1,43 @@
+Judul Proyek:
+English: Backoffice Order Management System for ISP
+Indonesian: Sistem Manajemen Order Backoffice untuk ISP
+
+Deskripsi Proyek (Bahasa Indonesia)
+Deskripsi:
+Sistem Manajemen Order Backoffice ini dirancang untuk mengoptimalkan proses pemesanan, validasi, penugasan teknisi, dan pemasangan layanan internet pada Internet Service Provider (ISP). Sistem ini mengintegrasikan bot Telegram dan platform berbasis web untuk memastikan koordinasi yang efisien antara berbagai peran pengguna:
+
+Sales → Mencatat pesanan pelanggan baru melalui bot Telegram.
+SPP/Inputer → Memvalidasi data pelanggan sebelum diproses.
+Helpdesk (HD) → Menugaskan teknisi yang tersedia untuk survei dan pemasangan.
+Teknisi → Menerima tugas melalui bot Telegram, melakukan survei lokasi, dan melakukan pemasangan jika memungkinkan.
+Alur Kerja Sistem:
+Pembuatan Order (Sales):
+Sales mencatat data pelanggan baru melalui bot Telegram Sales.
+Data pesanan disimpan di database MySQL dengan status awal "Order Baru".
+Validasi Data (SPP/Inputer):
+SPP/Inputer memverifikasi data pelanggan dan memperbarui status order menjadi "Valid".
+Penugasan Teknisi (Helpdesk):
+Helpdesk menugaskan teknisi yang sedang idle melalui platform web.
+Teknisi menerima notifikasi melalui bot Telegram Teknisi.
+Survei & Pemasangan (Teknisi):
+Teknisi melakukan survei lokasi dan jika memungkinkan, langsung melakukan pemasangan.
+Setelah pemasangan, teknisi memperbarui status order melalui bot Telegram Teknisi.
+Validasi Akhir & Penyelesaian Order:
+Helpdesk memvalidasi hasil pemasangan dan melakukan konfigurasi lanjutan.
+SPP/Inputer melakukan pengecekan akhir sebelum order dinyatakan selesai.
+Teknologi yang Digunakan:
+✅ CodeIgniter (PHP) – Platform web untuk manajemen order.
+✅ MySQL – Database untuk menyimpan data order dan aktivitas pengguna.
+✅ Bot Telegram (Sales & Teknisi) – Notifikasi dan komunikasi real-time untuk update order.
+
+Fitur Utama:
+✔️ Otomasi pemrosesan dan validasi order
+✔️ Penugasan teknisi yang efisien dan real-time
+✔️ Notifikasi instan melalui bot Telegram
+✔️ Akses multi-peran sesuai dengan tugas masing-masing
+✔️ Pelacakan status order dari awal hingga selesai
+
+Manfaat:
+🔹 Meningkatkan efisiensi operasional dengan mengurangi proses manual.
+🔹 Mempercepat penugasan teknisi, sehingga pemasangan lebih cepat.
+🔹 Meningkatkan kepuasan pelanggan dengan pelayanan yang lebih responsif.
